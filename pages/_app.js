@@ -37,7 +37,7 @@ export default function App() {
   };
 
   async function TransformClick() {
-    let URL = `https://fastapi-vercel-seven-rose.vercel.app/api/${Service}?easting=${Inputs[0]}&northing=${Inputs[1]}`;
+    let URL = `/api/${Service}?easting=${Inputs[0]}&northing=${Inputs[1]}`;
     try {
       const resp = await fetch(URL);
       if (resp.ok) {
